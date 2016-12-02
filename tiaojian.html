@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+		
+		/**
+		 * author:Mr liu
+		 */
+		
+		
+		/*条件运算符
+		JavaScript 还包含了基于某些条件对变量进行赋值的条件运算符
+		
+		语法
+		variablename=(condition)?value1:value2 
+		
+		如果变量 age 中的值小于 18，则向变量 vote 赋值 "您未到法定年齡沒有民主投票的權利"，否则赋值 "您已經到法定年齡可以參與民主投票"。
+		*/
+		
+		
+		function showAge(){
+				var age,vote;
+				age = document.getElementById("age").value;
+				vote = (age<18)?"您未到法定年齡沒有民主投票的權利":"您已經到法定年齡可以參與民主投票";
+				document.getElementById("tips").innerHTML=vote;
+			}
+		</script>
+	</head>
+	<body>
+		<input type="text" id="age" value="18"/>
+		<button type="button" onclick="showAge()">showAge</button>
+		<div id="tips"></div>
+	</body>
+</html>
