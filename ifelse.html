@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+		/*
+			var age = 18;
+			function myFunction(){
+				if(age > 18){
+					alert("您已是成年人")
+				}
+				else{
+					alert("您未成年人")
+				}
+			}*/
+			var ageText = document.getElementById("ages").value;
+			function myFunction(){
+				if(ageText > 18){
+					alert("您已是成年人");
+				}
+				else{
+					alert("您未成年人")
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<input type="text" id="ages" value="" />
+		<button type="button" onclick="myFunction();">click me</button>
+	</body>
+</html>
